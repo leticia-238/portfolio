@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(95, 124, 253);
+  color: rgb(0 75 139);
+  font-family: Outfit;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.header {
+  background-image: url("./images/under-sea.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 3rem;
+  color: rgb(233, 237, 252);
+  text-shadow: 0 0 15px rgb(2, 99, 131);
+  font-family: Mochiy Pop P One;
+}
+
+.navigation {
+  justify-content: center;
+  padding: 15px;
+  background-color: #03a1fd;
+  font-size: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 5px rgb(85, 112, 231);
+  font-family: Mochiy Pop P One
+}
+
+.navigation a {
+  margin: 0 20px;
+  color: rgb(18 92 135);
+}
+
+article {
+  flex-direction: column;
+  align-items: center;
+}
+
+article .title {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: Mochiy Pop P One;
+}
+
+.first-image {
+  width: 400px;
+  box-shadow: 0 0 5px rgb(85, 112, 231);
+}
+
+.first-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.first-section h3 {
+  padding: 10px;
+}
+
+table {
+  min-width: 600px;
+}
+
+table caption {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+th,
+td {
+  padding: 3px;
+}
+
+.container-info {
+  display: inline-flex;
+  padding: 20px;
+  margin: 20px;
+  max-width: 800px;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(148, 167, 249);
+  box-shadow: 0 0 5px rgb(85, 112, 231);
+}
+
+.container-info img {
+  flex-basis: 300px;
+  margin: 0 20px;
+}
+
+.container-info div {
+  flex-basis: 500px;
+  margin: 0 20px;
+}
+
+.container-info h3 {
+  padding: 0 15px 15px;
+  font-family: Mochiy Pop P One;
+}
+
+#fisionomia {
+  margin: 20px;
+}
+
+#fisionomia h3 {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-family: Mochiy Pop P One;
+}
+
+#fisionomia img {
+  width: 400px;
+}
+
+#bibliografia {
+  align-self: flex-start;
+  margin: 20px;
+}
+
+#bibliografia h4 {
+  padding: 10px 0;
+  font-family: Mochiy Pop P One;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "article aside"
+    "footer footer";
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: nav;
+}
+.item3 {
+  grid-area: article;
+}
+.item4 {
+  grid-area: aside;
+}
+.item5 {
+  grid-area: footer;
+}
+
+aside {
+  margin-top: 20px;
+}
+
+aside h3 {
+  padding: 10px 0;
+  font-family: Mochiy Pop P One;
+}
+
+aside img{
+  box-shadow: 0 0 5px rgb(85, 112, 231);
+  border-radius: 20px;
+}
+
+footer {
+  padding: 15px;
+  background-color: rgb(69, 99, 233);
+  color: rgb(13, 43, 177);
+}
