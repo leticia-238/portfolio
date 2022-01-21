@@ -1,0 +1,41 @@
+const buttonSubmit = form.submit;
+
+buttonSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  formValidate();
+});
+
+function formValidate() {
+  let formInvalid = document.querySelector("#form:invalid");
+  if (formInvalid) {
+    window.alert(
+      "Formulário inválido, por favor preencha o formulário corretamente."
+    );
+  }else{
+    createCurriculum()
+  }
+}
+
+function curriculumData(){
+  return {
+    name: form.name.value,
+    email: form.email.value,
+    cpf: form.cpf.value,
+    address: form.address.value,
+    city:form.city.value,
+    state:form.state.value,
+    type:form.type.value,
+    abstract:form.abstract.value,
+    job:{
+      name:form.office.value,
+      description:form.description.value,
+      start:form.start.value,
+    }
+  };
+}
+
+function createCurriculum() {
+  const person = curriculumData();
+
+  console.log(person)
+}

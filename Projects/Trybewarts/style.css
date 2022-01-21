@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 238, 238);
+  font-family: "Grenze Gotisch", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 5px;
+  font: 700 1rem "Grenze Gotisch", cursive;
+  border: 1px solid white;
+  background-color: rgb(204, 203, 203);
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.section-login {
+  height: 100vh;
+  justify-content: center;
+  background-color: rgb(221, 219, 219);
+}
+
+.section-login form {
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.header {
+  background-color: rgb(212, 133, 133);
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-logo {
+  width: 50px;
+  margin: 10px;
+}
+
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.icon-login {
+  margin: 10px;
+  color: white;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.title-field {
+  font: 600 1rem;
+  color: white;
+}
+
+.input-field {
+  padding: 5px;
+  outline: none;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
