@@ -15,8 +15,19 @@
       <h1 class="title">Resume Form</h1>
     </div>
   </header>
+  <section class="section" style="display: none;" id="message">
+    <div class="message is-warning" style="max-width: 500px; margin: auto;">
+      <div class="message-header">
+        <p>Warning</p>
+        <button class="delete" aria-label="delete" id="message-delete"></button>
+      </div>
+      <div class="message-body">
+        "Formulário inválido, por favor preencha todos os campos do formulário corretamente."
+      </div>
+    </div>
+  </section>
   <main class="section columns is-3-desktop">
-    <div class="column is-full-mobile">
+    <div class="column is-three-fifths is-offset-one-fifth">
       <form method="get" name="form" class="box" id="form">
         <fieldset class="block">
           <div class="field">
@@ -125,8 +136,8 @@
         <button type="submit" class="button is-primary is-fullwidth" id="submit">submit</button>
       </form>
     </div>
-    <div class="column is-half">
-      <section class="box" id="curriculum-container">
+    <div class="column is-half" style="display: none;" id="curriculum-container">
+      <section class="box">
         <header id="curriculum-header">
           <h1 id="curriculum-name"></h1>
           <h2 id="curriculum-email"></h2>
