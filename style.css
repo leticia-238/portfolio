@@ -1,19 +1,24 @@
-body{
-  background-color: #E6746C;
-	font-family: 'Josefin Sans', sans-serif ;	
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-#about-me{
-	background-color: #E6D583;
-	padding: 20px;
-	max-width: 500px;
-	margin: auto;
+body{
+  background-color: #fafafa;
+	font-family: 'Josefin Sans', sans-serif ;	
+	padding: 50px;
 }
-.header{
-	text-align: center;
+
+.header-portfolio{
+	display: flex;
+	align-items: center;
 }
-.container{
-	background-color: #E65F55;
+
+.perfil-image{
+	width: 100px;
+	border-radius: 50%;
+	margin-right: 20px;
 }
 
 .name{
@@ -21,15 +26,45 @@ body{
 	font-size: 2.5rem;
 }
 
-.foto-de-perfil{
-	width: 150px;
-	border-radius: 50%;
+main{
+	display: grid;
+	grid-template-columns: 1fr auto;
 }
 
-.description{
-	font-size:  1rem ;
-	font-weight: 300;
+section{
+	margin: 20px 0;
 }
 
+.section-title{
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
 
+.about-me{
+	max-width: 500px;
+}
+
+.my-projects{
+	grid-column: 1 / span 2;
+}
+
+.container-projects{
+	display: flex;
+	justify-content: center;
+}
+
+.project-preview{
+	width: 250px;
+	aspect-ratio: 16 / 9;
+	background-color: antiquewhite;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.project-name{
+	font-size: 1rem;
+}
 
