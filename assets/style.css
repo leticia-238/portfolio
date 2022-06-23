@@ -1,19 +1,21 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4aw8tq');
-  src:  url('fonts/icomoon.eot?4aw8tq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4aw8tq') format('truetype'),
-    url('fonts/icomoon.woff?4aw8tq') format('woff'),
-    url('fonts/icomoon.svg?4aw8tq#icomoon') format('svg');
+  font-family: icomoon;
+  src: url("fonts/icomoon.eot?4aw8tq");
+  src:
+    url("fonts/icomoon.eot?4aw8tq#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?4aw8tq") format("truetype"),
+    url("fonts/icomoon.woff?4aw8tq") format("woff"),
+    url("fonts/icomoon.svg?4aw8tq#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: icomoon !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,27 +27,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-jest:before {
+.icon-jest::before {
   content: "\e900";
 }
-.icon-git:before {
+
+.icon-git::before {
   content: "\e901";
 }
-.icon-github:before {
+
+.icon-github::before {
   content: "\e902";
 }
-.icon-html5:before {
+
+.icon-html5::before {
   content: "\e903";
 }
-.icon-redux:before {
+
+.icon-redux::before {
   content: "\e904";
 }
-.icon-react:before {
+
+.icon-react::before {
   content: "\e905";
 }
-.icon-css3:before {
+
+.icon-css3::before {
   content: "\e906";
 }
-.icon-javascript:before {
+
+.icon-javascript::before {
   content: "\e907";
 }
