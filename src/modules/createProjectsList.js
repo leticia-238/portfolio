@@ -1,34 +1,35 @@
-import projectsList from "../data/projectsList.js";
+/* eslint-disable import/extensions */
+import projectsList from '../data/projectsList.js';
 
-const projectsSection = document.querySelector(".container-projects");
+const projectsSection = document.querySelector('.container-projects');
 
-const createImageLink = ({ title, image, web_page }) => {
-  const projectImage = document.createElement("img");
+const createImageLink = ({ title, image, web_page: webPage }) => {
+  const projectImage = document.createElement('img');
   projectImage.src = image;
   projectImage.alt = title;
 
-  const link = document.createElement("a");
-  link.href = web_page;
-  link.target = "_blank";
+  const link = document.createElement('a');
+  link.href = webPage;
+  link.target = '_blank';
 
   link.appendChild(projectImage);
   return link;
 };
 
 const createProjectLabel = ({ title, repository }) => {
-  const label = document.createElement("div");
-  label.className = "label-project";
+  const label = document.createElement('div');
+  label.className = 'label-project';
 
-  const projectTitle = document.createElement("h3");
-  projectTitle.className = "project-title";
+  const projectTitle = document.createElement('h3');
+  projectTitle.className = 'project-title';
   projectTitle.innerText = title;
 
-  const githubLink = document.createElement("a");
+  const githubLink = document.createElement('a');
   githubLink.src = repository;
   githubLink.target = title;
 
-  const githubIcon = document.createElement("i");
-  githubIcon.className = "icon icon-github";
+  const githubIcon = document.createElement('i');
+  githubIcon.className = 'icon icon-github';
 
   githubLink.appendChild(githubIcon);
   label.appendChild(projectTitle);
@@ -37,8 +38,8 @@ const createProjectLabel = ({ title, repository }) => {
 };
 
 const createProjectCard = (project) => {
-  const card = document.createElement("div");
-  card.className = "project";
+  const card = document.createElement('div');
+  card.className = 'project';
 
   card.appendChild(createImageLink(project));
   card.appendChild(createProjectLabel(project));
