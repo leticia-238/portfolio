@@ -3,12 +3,13 @@ import projectsList from '../data/projectsList.js';
 
 const projectsSection = document.querySelector('.container-projects');
 
-const createImageLink = ({ title, image, web_page: webPage }) => {
+const createImageLink = ({ title, image, webPage }) => {
   const projectImage = document.createElement('img');
   projectImage.src = image;
   projectImage.alt = title;
 
   const link = document.createElement('a');
+  link.className = 'project-image';
   link.href = webPage;
   link.target = '_blank';
 
