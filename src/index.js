@@ -4,18 +4,12 @@ import { ThemeProvider } from 'styled-components';
 import App from './App';
 import GlobalStyle from './GlobalStyle';
 import reportWebVitals from './reportWebVitals';
-
-const theme = {
-  colors: {
-    primary: '#ff77c1',
-    secondary: '#77f7ff',
-  },
-};
+import light from './themes/light';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={ theme }>
+    <ThemeProvider theme={ light }>
       <GlobalStyle />
       <App />
     </ThemeProvider>
