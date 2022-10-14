@@ -16,6 +16,10 @@ export const Image = styled.img`
   margin-bottom: 5px;
 `;
 
+export const Description = styled.div`
+  margin: 10px 0;
+`;
+
 export const Container = styled.div`
   background: ${({ theme }) => theme.colors.gradient_primary};
   margin: 20px 10px;
