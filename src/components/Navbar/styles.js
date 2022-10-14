@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
-export const Container = styled.nav`
+export const Nav = styled.nav`
   background: ${({ theme }) => theme.colors.bg};
   display: flex;
   box-shadow: ${({ theme }) => theme.colors.bg_shadow};
-  padding: 5px 5px 0;
+  padding: 5px;
   justify-content: center;
 `;
 
-export const Tab = styled.div`
+export const NavTab = styled.div`
   padding: 8px 10px;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   margin: 0 6px;
+  flex-grow: 1;
+  text-align: center;
   color: ${({ active, theme }) => (
     active ? theme.colors.bg : theme.colors.primary
   )};

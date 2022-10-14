@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Container, Tab } from './styles';
+import { Nav, NavTab } from './styles';
 
 const paths = {
   home: '/', about: '/about', projects: '/projects',
@@ -12,26 +12,26 @@ function NavBar() {
   const isActive = (path) => pathname === paths[path];
 
   return (
-    <Container>
-      <Tab
+    <Nav>
+      <NavTab
         active={ isActive('home') }
         onClick={ () => { navigate('/'); } }
       >
         Home
-      </Tab>
-      <Tab
+      </NavTab>
+      <NavTab
         active={ isActive('about') }
         onClick={ () => { navigate('/about'); } }
       >
         About me
-      </Tab>
-      <Tab
+      </NavTab>
+      <NavTab
         active={ isActive('projects') }
         onClick={ () => { navigate('/projects'); } }
       >
         Projects
-      </Tab>
-    </Container>
+      </NavTab>
+    </Nav>
   );
 }
 
