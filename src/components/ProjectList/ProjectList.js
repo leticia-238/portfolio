@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Card, Container, Image, Title } from './styles';
 
-function ProjectContainer({ projects }) {
+function ProjectList({ projects }) {
   return (
     <Container>
       { projects.length && projects.map(({ urlImage, title }, index) => (
@@ -14,10 +14,10 @@ function ProjectContainer({ projects }) {
   );
 }
 
-ProjectContainer.propTypes = {
+ProjectList.propTypes = {
   projects: PropTypes.arrayOf(PropTypes.objectOf(
     PropTypes.string,
   )).isRequired,
 };
 
-export default ProjectContainer;
+export default ProjectList;
