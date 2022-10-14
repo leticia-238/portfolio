@@ -8,11 +8,10 @@ export const Container = styled.nav`
   justify-content: center;
 `;
 
-export const Link = styled.a`
+export const Tab = styled.div`
   padding: 8px 10px;
   border-radius: 8px 8px 0 0;
   margin: 0 6px;
-  text-decoration: none;
   color: ${({ active, theme }) => (
     active ? theme.colors.bg : theme.colors.primary
   )};

@@ -1,4 +1,3 @@
-import NavBar from '../components/Navbar/NavBar';
 import ProjectContainer from '../components/ProjectContainer/ProjectContainer';
 
 const projects = [{
@@ -7,10 +6,7 @@ const projects = [{
 
 function Home() {
   return (
-    <>
-      <NavBar />
-      <ProjectContainer projects={ projects } />
-    </>
+    <ProjectContainer projects={ projects } />
   );
 }
 

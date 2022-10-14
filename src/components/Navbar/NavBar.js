@@ -1,16 +1,36 @@
-import { Container, Link } from './styles';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Container, Tab } from './styles';
 
 const paths = {
-  home: 'home', about: 'about', projects: 'projects',
+  home: '/', about: '/about', projects: '/projects',
 };
 
 function NavBar() {
-  const path = 'home';
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+
+  const isActive = (path) => pathname === paths[path];
+
   return (
     <Container>
-      <Link href="/home" active={ path === paths.home }>Home</Link>
-      <Link href="/about" active={ path === paths.about }>About me</Link>
-      <Link href="/projects" active={ path === paths.projects }>Projects</Link>
+      <Tab
+        active={ isActive('home') }
+        onClick={ () => { navigate('/'); } }
+      >
+        Home
+      </Tab>
+      <Tab
+        active={ isActive('about') }
+        onClick={ () => { navigate('/about'); } }
+      >
+        About me
+      </Tab>
+      <Tab
+        active={ isActive('projects') }
+        onClick={ () => { navigate('/projects'); } }
+      >
+        Projects
+      </Tab>
     </Container>
   );
 }
