@@ -1,9 +1,12 @@
 export default {
   colors: {
-    bg: '#a6765f',
+    bg: '#f7f7f7',
+    bg_shadow: '0px 1px 8px #dfdfdf',
     text_primary: 'black',
-    primary_600: '#a6765f',
-    primary_700: '#a6765f',
-    primary_800: '#a6765f',
+    text_secondary: '#ddc996',
+    primary: '#f13565',
+    secondary: '#f67975',
+    terciary: '#caf2be',
+    quaternary: '#fbffcc',
   },
 };
