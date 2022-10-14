@@ -8,5 +8,7 @@ export default {
     secondary: '#f67975',
     terciary: '#caf2be',
     quaternary: '#fbffcc',
+    gradient_primary: `
+    linear-gradient(90deg, rgba(241,53,96,1) 40%, rgba(246,121,117,1) 100%);`,
   },
 };
