@@ -1,12 +1,8 @@
-import ProjectContainer from '../components/ProjectContainer/ProjectContainer';
-
-const projects = [{
-  urlImage: './', title: 'teste',
-}];
+import Profile from '../components/Profile/Profile';
 
 function Home() {
   return (
-    <ProjectContainer projects={ projects } />
+    <Profile />
   );
 }
 
