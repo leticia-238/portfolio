@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h3`
-  background: ${(props) => props.theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Image = styled.img`
@@ -9,9 +9,9 @@ export const Image = styled.img`
 `;
 
 export const Card = styled.div`
-  background: ${(props) => props.theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Container = styled.div`
-background: ${(props) => props.theme.colors.primary};
+background: ${({ theme }) => theme.colors.primary};
 `;

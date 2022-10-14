@@ -15,7 +15,9 @@ function ProjectContainer({ projects }) {
 }
 
 ProjectContainer.propTypes = {
-  projects: PropTypes.arrayOf(PropTypes.string).isRequired,
+  projects: PropTypes.arrayOf(PropTypes.objectOf(
+    PropTypes.string,
+  )).isRequired,
 };
 
 export default ProjectContainer;
