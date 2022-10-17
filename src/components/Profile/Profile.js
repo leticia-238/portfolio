@@ -6,6 +6,7 @@ function Profile() {
   return (
     <Container>
       <Image src={ ProfileFigure } />
+      <Contacts />
       <Name>Letícia Oliveira Andrade</Name>
       <Title>Desenvolvedora Web Full Stack</Title>
       <Description>
@@ -25,7 +26,6 @@ function Profile() {
           como autogestão, comunicação e colaboração.
         </p>
       </Description>
-      <Contacts />
     </Container>
   );
 }

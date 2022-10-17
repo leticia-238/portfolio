@@ -12,6 +12,7 @@ export const NavTab = styled.div`
   padding: 8px 10px;
   border-radius: 8px;
   margin: 0 6px;
+  max-width: 200px;
   flex-grow: 1;
   text-align: center;
   color: ${({ active, theme }) => (
