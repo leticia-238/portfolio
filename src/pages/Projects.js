@@ -1,12 +1,9 @@
 import ProjectList from '../components/ProjectList/ProjectList';
-
-const projects = [{
-  urlImage: './', title: 'teste',
-}];
+import { projectList } from '../data/data';
 
 function Projects() {
   return (
-    <ProjectList projects={ projects } />
+    <ProjectList projects={ projectList } />
   );
 }
 
