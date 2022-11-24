@@ -23,6 +23,7 @@ export const NavTab = styled.div`
   )};
   
   &:hover {
+    cursor: pointer;
     color: ${({ theme }) => theme.colors.bg};
     background: ${({ theme }) => theme.colors.primary};
   }
