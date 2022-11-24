@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactBox = styled.div`
+const ContactBox = styled.div`
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -9,12 +9,4 @@ export const ContactBox = styled.div`
   flex-direction: column;
 `;
 
-export const Contact = styled.a`
-  width: 28px;
-  line-height: 0;
-  margin: 5px;
-`;
-
-export const ContactIcon = styled.img`
-  width: 100%;
-`;
+export default ContactBox;
